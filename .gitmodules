@@ -1,0 +1,15 @@
+[submodule "reference/mcu_framework_lpc845"]
+	path = reference/mcu_framework_lpc845
+	url = https://github.com/ZxyKira/mcu_framework_lpc845.git
+[submodule "reference/mcu_framework"]
+	path = reference/mcu_framework
+	url = https://github.com/ZxyKira/mcu_framework.git
+[submodule "reference/tool_fifo"]
+	path = reference/tool_fifo
+	url = https://github.com/ZxyKira/tool_fifo.git
+[submodule "reference/tool_timer_scheduler"]
+	path = reference/tool_timer_scheduler
+	url = https://github.com/ZxyKira/tool_timer_scheduler.git
+[submodule "reference/tool_task_scheduler"]
+	path = reference/tool_task_scheduler
+	url = https://github.com/ZxyKira/tool_task_scheduler.git
