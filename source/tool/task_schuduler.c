@@ -31,14 +31,14 @@
 /* *****************************************************************************************
  *    Public Variable
  */
-tool_ts_handle_t task_scheduler_handle;
+tool_task_scheduler_handle_t task_scheduler_handle;
 
 /* *****************************************************************************************
  *    Private Variable
  */
-static tool_ts_event_t task_scheduler_high[NUMB_TASK];
-static tool_ts_event_t task_scheduler_normal[NUMB_TASK];
-static tool_ts_event_t task_scheduler_low[NUMB_TASK];
+static tool_task_scheduler_event_t task_scheduler_high[NUMB_TASK];
+static tool_task_scheduler_event_t task_scheduler_normal[NUMB_TASK];
+static tool_task_scheduler_event_t task_scheduler_low[NUMB_TASK];
 
 
 
@@ -60,7 +60,7 @@ static tool_ts_event_t task_scheduler_low[NUMB_TASK];
 
 
 void task_scheduler_init(void){
-  tool_ts_config_t config;
+  tool_task_scheduler_config_t config;
 	
   config.prtorityHigh.eventBuffer = task_scheduler_high;
 	config.prtorityHigh.bufferQuantity = NUMB_TASK;
@@ -68,9 +68,8 @@ void task_scheduler_init(void){
 	config.prtorityNormal.bufferQuantity = NUMB_TASK;
 	config.prtorityLow.eventBuffer = task_scheduler_low;
 	config.prtorityLow.bufferQuantity = NUMB_TASK;
-	config.idleCallback.execute = 0;
 	
-	tool_ts_api.initialze(&task_scheduler_handle, &config);
+	tool_task_scheduler_api.initialze(&task_scheduler_handle, &config);
 }
 
 

@@ -33,7 +33,7 @@
 /* *****************************************************************************************
  *    Public Variable
  */
-tool_timer_scheduler_memory_t timer_scheduler_handle;
+tool_timer_scheduler_handle_t timer_scheduler_handle;
 
 
 /* *****************************************************************************************
@@ -54,7 +54,7 @@ static void timer_scheduler_execute_task(void* attachment){
 } 
 
 static void timer_scheduler_event(fw_timer_handle_t* handle, void* attachment){
-	tool_ts_api.addTask(&task_scheduler_handle, timer_scheduler_execute_task, 0, tool_ts_prtority_normal);
+	tool_task_scheduler_api.addTask(&task_scheduler_handle, timer_scheduler_execute_task, 0, tool_task_scheduler_prtority_normal);
 }
  
 /* *****************************************************************************************

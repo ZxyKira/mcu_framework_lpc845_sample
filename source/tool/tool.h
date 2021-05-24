@@ -26,11 +26,11 @@ extern "C"{
 #include "fw_timer.h"
 
 //task_scheduler
-extern tool_ts_handle_t task_scheduler_handle;
+extern tool_task_scheduler_handle_t task_scheduler_handle;
 extern void task_scheduler_init(void);
 
 //timer_scheduler
-extern tool_timer_scheduler_memory_t timer_scheduler_handle;
+extern tool_timer_scheduler_handle_t timer_scheduler_handle;
 extern void timer_scheduler_init(fw_timer_handle_t* timer, uint32_t base_ms);
 
 #ifdef __cplusplus

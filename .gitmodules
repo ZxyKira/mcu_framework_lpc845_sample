@@ -13,3 +13,12 @@
 [submodule "reference/tool_task_scheduler"]
 	path = reference/tool_task_scheduler
 	url = https://github.com/ZxyKira/tool_task_scheduler.git
+[submodule "reference/mcu_driver_lpc845"]
+	path = reference/mcu_driver_lpc845
+	url = https://github.com/ZxyKira/mcu_driver_lpc845.git
+[submodule "reference/tool_stack_pool"]
+	path = reference/tool_stack_pool
+	url = https://github.com/ZxyKira/tool_stack_pool.git
+[submodule "reference/tool_ring_buffer"]
+	path = reference/tool_ring_buffer
+	url = https://github.com/ZxyKira/tool_ring_buffer.git
